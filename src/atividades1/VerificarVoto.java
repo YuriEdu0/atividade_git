@@ -10,4 +10,20 @@ package atividades1;
  */
 public class VerificarVoto {
     
+    int idade;
+    
+    public VerificarVoto( int idade){
+        this.idade = idade;
+    }
+    
+    public void podeVotar(){
+        if (this.idade >= 16) {
+            System.out.println("Pode votar");
+        }
+        else {
+            System.out.println("Voce nao pode votar");
+        }
+    }
+    
 }
+    

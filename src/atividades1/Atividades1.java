@@ -1,20 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package atividades1;
 
-/**
- *
- * @author oem
- */
+import java.util.Scanner;
+
 public class Atividades1 {
 
-    /**
-     * @param args the command line arguments
-     */
+    int idade;
+
     public static void main(String[] args) {
         // TODO code application logic here
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite sua idade para saber se pode votar: ");
+
+        Atividades1 atividade = new Atividades1();
+        atividade.idade = sc.nextInt();
+        
+        VerificarVoto vt1 = new VerificarVoto (atividade.idade);
+        vt1.podeVotar();
     }
-    
+
 }
